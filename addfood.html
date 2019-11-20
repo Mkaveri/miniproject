@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport"content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet"href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            font-family:arial,helvetica,sans-serif;}
+        * {box-sizing:border-box;}
+        .input-container{
+            display:-ms-flexbox;
+            display:flex;
+            width:100%;
+            height: 46px;
+            margin-bottom:15px;
+        }
+        body{
+            margin:0;
+            background:url("images/dog3.jpg") no-repeat;
+            background-size : cover;
+            font-family:arial,helvetica,sans-serif;
+        }
+        .icon{
+            padding:10px;
+            background:black;
+            color:white;
+            min-width:50px;
+            text-align:center;
+        }
+        .input-field:focus{
+            border:2px solid dodgerblue;
+        }
+        .btn{
+            background-color:black;
+            color:white;
+            padding:15px 20px;
+            border:none;
+            cursor:pointer;
+            width:100%;
+            opacity:0.9;
+        }
+
+        .btn:hover{
+            opocity:1;
+        }
+        .card-header h3{
+            color: white;
+        }
+        .card{
+            height: 300px;
+            margin-bottom: auto;
+            width: 260px;
+            margin-top: 80px;
+            margin-left: 780px;
+            background-color: gray !important;
+        }
+        h3{
+            text-align: center;
+            background-color: black;
+        }
+
+    </style>
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+</head>
+<body>
+<div class="container">
+    <div class="d-flex justify-content-center h-100">
+        <div class="card">
+            <div class="card-header">
+                <h3>ADD FOOD DETAILS</h3>
+            </div>
+            <!--<label style="font-size:30px;margin-left:320px;color:black">REGISTER HERE</label>-->
+            <!--</div><br><br><br><br>-->
+            <div class="card-body">
+                <form action="addfood.php" method="post">
+
+                    <div>
+                        <input type="text" name="image" placeholder="image">
+                        <br><br>
+                        <input type="text" name="food"  style="color: gray" placeholder="Enter food name">
+                        <br><br>
+
+                        <input type="text" name="amount" placeholder="amount">
+                    </div>
+
+                    <!--<a href="creg.html"  style="text-align:match-parent">New User?</a><br>-->
+
+                    <br>
+
+                    <div class="form-control">
+                        <input  type="submit" placeholder="ADD"
+                                name="submit" class="btn">
+                    </div>
+                </form>
+
+            </div>
+            <div class="card-footer">
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
